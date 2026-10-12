@@ -1,0 +1,13 @@
+package com.example.student_manager;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the Student Manager Application!";
+    }
+}
